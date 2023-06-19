@@ -13,12 +13,4 @@ function showLanguages() {
   page.style.display = "block";
 }
 
-function showContact() {
-  var page = document.getElementById("contact");
-  page.style.display = "Block";
-}
-
 showHome();
-showSkills();
-showLanguages();
-showContact();
