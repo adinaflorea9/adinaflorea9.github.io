@@ -88,6 +88,10 @@ div {
   border-radius: 10px;
 }
 
+#top-menu-bar a.active {
+  background-color: rgb(165, 91, 159);
+}
+
 #header-wrapper {
   min-height: 120px;
   display: flex;
