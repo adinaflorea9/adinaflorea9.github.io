@@ -81,15 +81,18 @@ div {
 #top-menu-bar a:visited {
   color: #fff;
 }
+
+#top-menu-bar a.active {
+  background-color: rgb(81, 10, 75);
+  border: 10px;
+  border-radius: 10px;
+}
+
 #top-menu-bar a:hover {
   color: rgb(247, 245, 248);
   background-color: rgb(165, 91, 159);
   border: 10px;
   border-radius: 10px;
-}
-
-#top-menu-bar a.active {
-  background-color: rgb(165, 91, 159);
 }
 
 #header-wrapper {
@@ -117,6 +120,11 @@ div {
 #my-picture img {
   border-radius: 50%;
   border: 4px solid rgb(225, 55, 210);
+}
+
+#my-picture img:hover {
+  border-radius: 50% 5px;
+  border-color: #c25fb3;
 }
 
 #header-info {
