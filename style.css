@@ -57,6 +57,11 @@ div {
   font-weight: bold;
 }
 
+#skills li span {
+  color: #c756b6;
+  font-weight: 100;
+}
+
 #top-menu-bar {
   margin: 0;
   padding: 0;
