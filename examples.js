@@ -21,3 +21,18 @@ function printInfo() {
   console.info("my name", name);
   console.warn("person type", typeof person, person);
 }
+
+var fVariable = function () {
+  console.info("function as a variable");
+};
+
+var f1Variable = () => {
+  console.info("function as a variable");
+};
+
+printInfo();
+fVariable();
+
+console.info("t1", typeof printInfo);
+console.info("t2", typeof fVariable);
+console.info("t4", typeof f1Variable);
