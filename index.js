@@ -44,12 +44,7 @@ function clickOnMenu(e) {
   }
 }
 
-function showSkills() {
-  var skills = [
-    { name: "HTML", favorite: true },
-    { name: "CSS" },
-    { name: "JS", favorite: true },
-  ];
+function showSkills(skills) {
   var htmlSkills = skills.map(function (skill) {
     // <li class="favorite">HTML</li>
     var cls = skill.favorite ? "favorite" : "";
@@ -59,8 +54,18 @@ function showSkills() {
   ul.innerHTML = htmlSkills.join("");
 }
 
+function loadSkills() {
+  var response = fetch("skills.json");
+  var loaded = response.then(function (r) {
+    return r.json();
+  });
+  loaded.then(function (skills) {
+    showSkills(skills);
+  });
+}
+
 //start our code
 
 showPage(activePage);
 $("#top-menu-bar").addEventListener("click", clickOnMenu);
-showSkills();
+loadSkills();
